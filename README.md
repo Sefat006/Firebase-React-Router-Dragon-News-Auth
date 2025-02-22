@@ -13,10 +13,7 @@
     4. Then main.jsx, replace <App /> by <RouterProvider router={Router(from Router.jsx)}></RouterProvider>
 
 * Set timer : moment.js website-> docs -> display -> 2nd format from box
- moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
-
-* Set timer : moment.js website-> docs -> display -> 2nd format from box
-moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+    1. moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
 * Marquee npm for moving text:
 1. Install from website
