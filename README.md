@@ -29,4 +29,4 @@
 * Load data from API (leftNavbar) : 
 1. Const [variable, setVariable] = useState([]);
 2. useEffect( () => { fetch data }, []);
-3. J page e useState and useEffect thakbe oi page e data.map korte hobe
+3. J page e useState and useEffect thakbe oi page e data.map korte hobe 
