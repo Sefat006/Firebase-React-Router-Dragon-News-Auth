@@ -25,3 +25,8 @@
 3. click on get font -> <embaded link> -> import -> copy <style></style>
 4. Open App.css -> paste at 2nd line
 5. Go to tailwind css -> search ‘font family’ -> scroll down to google font and copy @theme{} and then customise it with specific font from google font
+
+* Load data from API (leftNavbar) : 
+1. Const [variable, setVariable] = useState([]);
+2. useEffect( () => { fetch data }, []);
+3. J page e useState and useEffect thakbe oi page e data.map korte hobe
