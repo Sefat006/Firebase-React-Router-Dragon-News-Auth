@@ -30,3 +30,10 @@
 1. Const [variable, setVariable] = useState([]);
 2. useEffect( () => { fetch data }, []);
 3. J page e useState and useEffect thakbe oi page e data.map korte hobe 
+
+* Load data specific category in a new page ( read full news) [router.jsx]
+1. Create a page (CategoryNews.jsx) where data will show after loading
+2. Declare a children path: “/category/:id”
+3. Loader; (params) => fetch( `address/${params.id}` 
+4. In CategoryNews.jsx 
+    -> Const { data } = useLoaderData();
