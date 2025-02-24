@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaRegEye, FaShareAlt } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { NavLink } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
     const { author, title, rating, total_view, image_url, details } = news;
     console.log(news)
 
     return (
-        <div className="card bg-white shadow-lg rounded-lg p-4 border">
+        <div className="card bg-white shadow-lg rounded-lg p-4">
             {/* Header Section */}
             <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-2">
@@ -27,8 +28,12 @@ const NewsCard = ({ news }) => {
             <img src={image_url} alt="News" className="w-full rounded-lg mb-3" />
 
             {/* News Details */}
-            <p className="text-gray-700 text-sm">{details.slice(0, 150)}...</p>
-            <button className="text-blue-600 font-medium mt-2">Read More</button>
+            <p className="text-gray-700 text-sm mb-4">
+                {news.details.slice(0, 150)}...{" "}
+                <span className="text-primary">Read More</span>
+            </p>
+
+
 
             {/* Footer Section */}
             <div className="flex justify-between items-center mt-3 text-gray-600">
