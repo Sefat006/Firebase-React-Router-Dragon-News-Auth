@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRegEye, FaShareAlt } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
     const { author, title, rating, total_view, image_url, details } = news;
@@ -30,7 +30,7 @@ const NewsCard = ({ news }) => {
             {/* News Details */}
             <p className="text-gray-700 text-sm mb-4">
                 {news.details.slice(0, 150)}...{" "}
-                <span className="text-primary">Read More</span>
+                <Link to={`/news/${news_id}`} className="text-primary">Read More</Link>
             </p>
 
 
